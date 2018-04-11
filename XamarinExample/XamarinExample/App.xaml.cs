@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using Xamarin.Forms;
+using XamarinExample.Views;
 
 namespace XamarinExample
 {
@@ -13,7 +10,10 @@ namespace XamarinExample
         {
             InitializeComponent();
 
-            MainPage = new XamarinExample.MainPage();
+            if (Device.RuntimePlatform == Device.iOS)
+                MainPage = new MainPagePrincipal();
+            else
+                MainPage = new NavigationPage(new MainPagePrincipal());
         }
 
         protected override void OnStart()
