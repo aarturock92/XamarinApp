@@ -135,9 +135,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinExample\XamarinExample.csproj">
-      <Project>{ad64722d-7583-431f-9da5-2b640704180e}</Project>
-      <Name>XamarinExample</Name>
+    <ProjectReference Include="..\..\XamarinMobile.Clients\XamarinMobile.Clients.csproj">
+      <Project>{2c03d5e4-3274-4ede-93ea-671f51a58443}</Project>
+      <Name>XamarinMobile.Clients</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

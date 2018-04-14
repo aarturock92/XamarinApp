@@ -1,19 +1,19 @@
 ﻿
 using Xamarin.Forms;
-using XamarinExample.Views;
+using XamarinMobile.Clients.Views;
 
-namespace XamarinExample
+namespace XamarinMobile.Clients
 {
     public partial class App : Application
     {
         public App()
         {
-            InitializeComponent();
+            InitializeComponent();            
 
             if (Device.RuntimePlatform == Device.iOS)
                 MainPage = new MainPagePrincipal();
             else
-                MainPage = new NavigationPage(new MainPagePrincipal());
+                MainPage = new NavigationPage(new MainPagePrincipal());            
         }
 
         protected override void OnStart()
